@@ -1,3 +1,4 @@
+import 'package:chat_ia/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,8 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+    
       title: 'Flutter Demo',
       theme: ThemeData(
+        brightness: Brightness.dark,
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
@@ -28,10 +31,10 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Chat IA.... NOMBRE, NO SE...JAJAJA'),
     );
   }
 }
@@ -105,8 +108,9 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const HomeScreen(),
             const Text(
-              'are yoy gay?',
+              'el que lea esto es gay...',
             ),
             Text(
               '$_counter',
